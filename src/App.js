@@ -18,7 +18,7 @@ const useRotatingStyle = (name, color) => {
     return data.make === makes[makeToHighlightIndex]
       ? { backgroundColor: color }
       : { backgroundColor: "rgba(0,0,0,0)" }
-  }, [makeToHighlightIndex]);
+  }, [makeToHighlightIndex, color, name]);
 
   const rotate = () => {
     const nextMakeIndex = (makeToHighlightIndex + 1) % makes.length
